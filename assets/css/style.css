@@ -1,0 +1,24 @@
+.header {
+    font-family: 'Livvic', sans-serif;
+    
+}
+
+.lead {
+    font-family: 'Livvic', sans-serif;
+}
+
+.questions {
+    font-family: 'Livvic', sans-serif;
+}
+
+.wallpaper {
+    background-size: 100%;
+    background-image: url("../images/qmark.jpeg");
+    text-align: center;
+    }
+
+    .jumbotron {
+        background-size: 100%;
+        background-image: url("../images/qmark.jpeg");
+        text-align: center;
+    }
