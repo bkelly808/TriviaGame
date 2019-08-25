@@ -60,9 +60,7 @@ $(document).ready(function() {
           $('#correctScore').text("Correct Answers:" + " " + correctCount); 
           $('#wrongScore').text("Wrong Answers:" + " " + wrongCount); 
           $('#unanswered').text("Unanswered:" + " " + unanswered); 
-          $('#rightAnswers').text()
-
-          <p class="answers" id="rightAnswers"></p>
+          $('#rightAnswers')
 
       }
 
