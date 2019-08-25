@@ -46,7 +46,7 @@ $(document).ready(function() {
           clearInterval(intervalId);
       }
   
-          //Need to hide text after questions are answered or timer runs out
+//Need to hide text after questions are answered or timer runs out
       function hide(){
           $('#countdown').hide();
           $('.trivia-ques').hide();
@@ -56,7 +56,7 @@ $(document).ready(function() {
       // Need to display results
       function displaySummary(){
           $('.results').show();
-          unanswered = (8-(correctCount+wrongCount));
+          unanswered = (9-(correctCount+wrongCount));
           $('#correctScore').text("Correct Answers:" + " " + correctCount); 
           $('#wrongScore').text("Wrong Answers:" + " " + wrongCount); 
           $('#unanswered').text("Unanswered:" + " " + unanswered); 
@@ -80,6 +80,6 @@ $(document).ready(function() {
       $('input[type=radio]').on ('change', function(){
       correctCount = $('input[value=correct]:checked').length;
       wrongCount = $('input[value=wrong]:checked').length;
-      unanswered = (8-(correctCount+wrongCount));
+      unanswered = (9-(correctCount+wrongCount));
       });
   });

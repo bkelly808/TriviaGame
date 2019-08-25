@@ -10,12 +10,12 @@
 <body>
      <h1 class="header">Time for Random World Trivia!</h1>
         <h3 class="lead">Try to guess the right answers within the alloted time to win!</h3>
-        <h3 class="lead">You have 90 seconds to answer 8 questions.</h3>
+        <h3 class="lead">You have 90 seconds to answer 9 questions.</h3>
         <h3 class="lead">Ready?</h3>
-        <hr class="my-4">
+        <hr>
 <!--start button-->
         <button class="btn" id="game-start">Start Game!</button>
-        <div class="col-lg-4 col-lg-offset-4 text-center">
+        <div>
         <p id="countdown">Time Remaining:<span id="timer"></span></p>
                               </div>
                       </main>
@@ -23,21 +23,81 @@
 <!-- Trivia Questions Section -->
 <div class="trivia-ques text-center">
 
-<p class="quest">1. Which was the first nation to give women the right to vote?</p>
-<form class="question">
-<label class="form-check form-check-inline text-mysize">
-<input type="radio" name="optradio" class="optradio" value="correct"> New Zealand</label>
-<label class="form-check form-check-inline text-mysize">
-<input type="radio" name="optradio" class="optradio" value="wrong"> USA</label>
-<label class="form-check form-check-inline text-mysize">
-<input type="radio" name="optradio" class="optradio" value="wrong">France</label>
-<label class="form-check form-check-inline text-mysize">
-<input type="radio" name="optradio" class="optradio" value="wrong">Australia</label>
+<p>1. Which was the first nation to give women the right to vote?</p>
+<form>
+<label><input type="radio" name="option" value="correct">New Zealand</label><br>
+<label><input type="radio" name="option" value="wrong">USA</label><br>
+<label><input type="radio" name="option" value="wrong">France</label><br>
+<label><input type="radio" name="option" value="wrong">Australia</label><br>
 </form>
 
+<p>2. Which ocean goes to the deepest depths?</p>
+<form>
+<label><input type="radio" name="option" value="wrong">Atlantic Ocean</label><br>
+<label><input type="radio" name="option" value="correct">Pacific Ocean</label><br>
+<label><input type="radio" name="option" value="wrong">Indian Ocean</label><br>
+<label><input type="radio" name="option" value="wrong">Southern Ocean</label><br>
+</form>
+
+<p>3. Which country has not fought a war since 1814?</p>
+<form>
+<label><input type="radio" name="option" value="wrong">Austria</label><br>
+<label><input type="radio" name="option" value="wrong">Portugal</label><br>
+<label><input type="radio" name="option" value="wrong">Malaysia</label><br>
+<label><input type="radio" name="option" value="correct">Sweden</label><br>
+</form>
+
+<p>4. What drupaceous fruit were Hawaiian women once forbidden to eat by the law?</p>
+<form>
+<label><input type="radio" name="option" value="correct">Coconuts</label><br>
+<label><input type="radio" name="option" value="wrong">Olives</label><br>
+<label><input type="radio" name="option" value="wrong">Mangoes</label><br>
+<label><input type="radio" name="option" value="wrong">Cherries</label><br>
+</form>
+
+<p>5. What's the most common non-contagious disease in the world?</p>
+<form>
+<label><input type="radio" name="option" value="wrong">Diabetes</label><br>
+<label><input type="radio" name="option" value="correct">Tooth decay</label><br>
+<label><input type="radio" name="option" value="wrong">Heart Disease</label><br>
+<label><input type="radio" name="option" value="wrong">Alzheimer's</label><br>
+</form>
+
+<p>6. Which country would you be in if you were to ski in the Dolomites?</p>
+<form>
+<label><input type="radio" name="option" value="wrong">France</label><br>
+<label><input type="radio" name="option" value="wrong">Austria</label><br>
+<label><input type="radio" name="option" value="correct">Italy</label><br>
+<label><input type="radio" name="option" value="wrong">Japan</label><br>
+</form>
+
+<p>7. Who owns the island of Bermuda?</p>
+<form>
+<label><input type="radio" name="option" value="wrong">USA</label><br>
+<label><input type="radio" name="option" value="correct">UK</label><br>
+<label><input type="radio" name="option" value="wrong">Netherlands</label><br>
+<label><input type="radio" name="option" value="wrong">Spain</label><br>
+</form>
+
+<p>8. What is Europe's largest glacier?</p>
+<form>
+<label><input type="radio" name="option" value="correct">Vatnajökull, Iceland</label><br>
+<label><input type="radio" name="option" value="wrong">La Grande Motte, France</label><br>
+<label><input type="radio" name="option" value="wrong">Torfajökull, Iceland</label><br>
+<label><input type="radio" name="option" value="wrong">Øksfjordjøkelen, Norway</label><br>
+</form>
+
+<p>9. This country is NOT part of the Amazon Rainforest in South America:</p>
+<form>
+<label><input type="radio" name="option" value="wrong">Peru</label><br>
+<label><input type="radio" name="option" value="correct">Costa Rica</label><br>
+<label><input type="radio" name="option" value="wrong">Colombia</label><br>
+<label><input type="radio" name="option" value="wrong">Bolivia</label><br>
+</form>
+<br>
 <!-- Done Button -->
-        <div>
-        <button class="btn"  id="game-done">Done!</button>
+<div>
+<button class="btn"  id="game-done">Done!</button>
         </div>
         </div>
       
@@ -47,6 +107,18 @@
 <p class="lead2" id="correctScore">Correct Answers:</p>
 <p class="lead2" id="wrongScore"></p>
 <p class="lead2" id="unanswered"></p>
+<p class="answers" id="rightAnswers">
+Answers:
+<br>
+1. Which was the first nation to give women the right to vote? *New Zealand<br>
+2. Which ocean goes to the deepest depths? *Pacific Ocean <br>                
+3. Which country has not fought a war since 1814? *Sweden <br>
+4. What drupaceous fruit were Hawaiian women once forbidden to eat by the law? *Coconuts <br>
+5. What's the most common non-contagious disease in the world? *Tooth decay <br>
+6. Which country would you be in if you were to ski in the Dolomites? *Italy <br>
+7. Which country owns the island of Bermuda? *UK <br>
+8. What is Europe's largest glacier? *Vatnajökull, Iceland <br>
+                </p>
         </div>
         </div>
 

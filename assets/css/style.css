@@ -1,17 +1,19 @@
-#game-start {
+.btn {
     font-family: 'Livvic', sans-serif;
-font-size: 20px;
+font-size: 25px;
 }
 
 body {
     text-align: center;
-    background: url("../images/background.jpeg");
+    background: url("../images/background.jpg");
     background-size: 100%;
     font-family: 'Livvic', sans-serif;
     font-size: 20px;
+    box-shadow: lightgray;
+    font-weight: bold;
 }
 
 #countdown {
     font-weight: bold;
-    color: darkred;
+    color: #e60000;
 }
