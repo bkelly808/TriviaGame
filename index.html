@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 <head>
+<title>Trivia Game</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 </head>
-<body class="wallpaper">
-    
-        <div class="jumbotron">
-                <h1 class="header">Random Trivia!</h1>
-                <p class="lead">Try to guess the right answers within the alloted time to win!</p>
-                <hr class="my-4">
-                <p class="questions">Questions</p>
-              </div>
+<body>
+     <h1 class="header">Time for Random World Trivia!</h1>
+        <h3 class="lead">Try to guess the right answers within the alloted time to win!</h3>
+        <h3 class="lead">You have 90 seconds to answer 8 questions.</h3>
+        <h3 class="lead">Ready?</h3>
+        <hr class="my-4">
+<!--start button-->
+        <button class="btn" id="game-start">Start Game!</button>
+        <div class="col-lg-4 col-lg-offset-4 text-center">
+        <p id="countdown">Time Remaining:<span id="timer"></span></p>
+                              </div>
+                      </main>
+                      
+<!-- Trivia Questions Section -->
+<div class="trivia-ques text-center">
 
+<p class="quest">1. Which was the first nation to give women the right to vote?</p>
+<form class="question">
+<label class="form-check form-check-inline text-mysize">
+<input type="radio" name="optradio" class="optradio" value="correct"> New Zealand</label>
+<label class="form-check form-check-inline text-mysize">
+<input type="radio" name="optradio" class="optradio" value="wrong"> USA</label>
+<label class="form-check form-check-inline text-mysize">
+<input type="radio" name="optradio" class="optradio" value="wrong">France</label>
+<label class="form-check form-check-inline text-mysize">
+<input type="radio" name="optradio" class="optradio" value="wrong">Australia</label>
+</form>
+
+<!-- Done Button -->
+        <div>
+        <button class="btn"  id="game-done">Done!</button>
+        </div>
+        </div>
+      
+<!-- Last page with results -->
+<div class="results">
+<p class="lead2" id="summary">All Done!</p> 
+<p class="lead2" id="correctScore">Correct Answers:</p>
+<p class="lead2" id="wrongScore"></p>
+<p class="lead2" id="unanswered"></p>
+        </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-
 </body>
 </html>

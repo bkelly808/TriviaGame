@@ -1,24 +1,17 @@
-.header {
+#game-start {
     font-family: 'Livvic', sans-serif;
-    
+font-size: 20px;
 }
 
-.lead {
-    font-family: 'Livvic', sans-serif;
-}
-
-.questions {
-    font-family: 'Livvic', sans-serif;
-}
-
-.wallpaper {
-    background-size: 100%;
-    background-image: url("../images/qmark.jpeg");
+body {
     text-align: center;
-    }
+    background: url("../images/background.jpeg");
+    background-size: 100%;
+    font-family: 'Livvic', sans-serif;
+    font-size: 20px;
+}
 
-    .jumbotron {
-        background-size: 100%;
-        background-image: url("../images/qmark.jpeg");
-        text-align: center;
-    }
+#countdown {
+    font-weight: bold;
+    color: darkred;
+}
